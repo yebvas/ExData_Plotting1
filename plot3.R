@@ -1,4 +1,4 @@
-#Code to plot a histogram or Global Active Power for February 1-2, 2007
+#Code to plot Sub meter readings for February 1-2, 2007
 
 #read in the data
 power_data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?", stringsAsFactors = FALSE)

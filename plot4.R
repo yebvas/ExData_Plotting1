@@ -1,4 +1,4 @@
-#Code to plot a histogram or Global Active Power for February 1-2, 2007
+#Code to plot Power Usage for February 1-2, 2007
 
 #read in the data
 power_data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?", stringsAsFactors = FALSE)
@@ -19,7 +19,7 @@ png("plot4.png", width=480, height=480)
 par(mfcol = c(2, 2))
 
 #plot Active Power
-plot(plot_data$DateTime, plot_data$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+plot(plot_data$DateTime, plot_data$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power")
 
 #plot Sub metering
 plot(plot_data$DateTime, plot_data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
